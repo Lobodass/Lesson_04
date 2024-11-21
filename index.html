@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>mokosh.ua</title>
+</head>
+
+<body>
+    <h1>Введіть своє ім’я</h1>
+    <input type="text" id="nameInput" placeholder="Ваше ім’я">
+    <button onclick="showGreeting()">Підтвердити</button>
+
+    <div id="greeting-section">
+        <h2 id="greeting-text"></h2>
+        <img id="greeting-image" src="6117163853.jpg" alt="Привітання">
+    </div>
+        
+    </div>
+    <script>
+         function showGreeting() {
+            const name = document.getElementById('nameInput').value;
+            const greetingText = document.getElementById('greeting-text');
+            const greetingImage = document.getElementById('greeting-image');
+
+            if (name.trim() !== "") {
+                greetingText.textContent = `Привіт, ${name}! Бажаю гарного дня!`;
+                greetingImage.style.display = 'block'; 
+            } else {
+                alert("Будь ласка, введіть своє ім’я");
+                greetingImage.style.display = 'none'; 
+            }
+        }
+        </script>
+</body>
+</html>

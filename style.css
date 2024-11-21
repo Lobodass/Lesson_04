@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(153, 218, 113);
+}
+#greeting-section {
+    margin-top: 20px;
+}
+img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+    padding-left: 600px;
+}  
